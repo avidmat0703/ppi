@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <script src="https://kit.fontawesome.com/46e7c6e86d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/customcss.css">
+    <style>@import url('https://fonts.cdnfonts.com/css/lucida-sans');</style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary py-3 bg-primary">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          <button type="button" class="btn btn-primary border-light ">Donar <i class="fa-solid fa-heart" style="color: #FF7A7E;"></i></button>
+          
+          <div class="dropdown">
+            <button class="btn btn-primary border-light  dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español (es)</button>
+            
+            <ul class="dropdown-menu bg-dark " aria-labelledby="languageDropdown">
+              <li><button class="dropdown-item" type="button">English (en)</button></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><button class="dropdown-item" type="button">Français (fr)</button></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><button class="dropdown-item" type="button">Português (pt)</button></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="Logo" style="max-width: 130px;"></a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto my-lg-2 my-4">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-success  text-white w-100">Mis listas <i class="fa-solid fa-book ps-2"></i></button>
+                    </li>
+                </ul>
+    
+                <form class="mx-auto my-lg-2 my-4">
+                    <div class="input-group">
+                        <select class="form-select mw-lg-px" style="min-width: 120px;">
+                            <option selected>Todo</option>
+                            <option value="1">Libro</option>
+                            <option value="2">Autor</option>
+                            <option value="3">Tema</option>
+                        </select>
+                        <input type="text" class="form-control" placeholder="Escribe aquí..." style="min-width: 190px;">
+                        <button class="btn btn-success text-white custom-width" type="submit">Buscar</button>
+                    </div>
+                </form>
+    
+                <ul class="navbar-nav ms-auto my-lg-2 my-4">
+                    <li class="nav-item me-lg-4">
+                        <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Acceder</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-info  text-white w-100">Registrarse</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container my-5">
+            <h1 class="text-center mb-4">Libros populares</h1>
+            <div class="swiper-container position-relative">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/libro1.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/libro2.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/libro3.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/libro4.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/libro5.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/libro6.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/The_Hunger_Games_cover.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/58375739.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/libro1.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/libro2.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/58375739.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <h1 class="text-center mb-4">Cómics</h1>
+            <div class="swiper-container position-relative">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/c4.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/c8.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/c9.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/c1.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/c2.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/c3.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/c5.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/c6.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/c7.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/c10.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/c11.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/c12.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <h1 class="text-center mb-4">Autobiografías</h1>
+            <div class="swiper-container position-relative">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/58375739.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/libro1.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/libro2.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/41PTKqZYcTL._SX195_.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/42844155.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/A_Song_of_Ice_and_Fire_book_collection_box_set_cover.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/The_Hunger_Games_cover.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/58375739.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/libro1.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/libro2.jpeg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/58375739.jpg" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <button type="button" class="btn btn-info  text-white mb-4 mb-lg-0 w-100">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="container my-5" id="temas">
+            <h1 class="text-center mb-4">Explorar por tema</h1>
+            <div class="swiper-container position-relative">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/art.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/biographies.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/fantasy.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/recipes.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/romance.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/science_fiction.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/art.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/art.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/art.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/art.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/art.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="imgs/art.png" class="img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </main>
+
+
+<footer class="bg-secondary">
+    <div class="container-fluid">
+        <div class="row">
+            <section class="col-12 col-sm-6 col-md-3 p-3">
+                <h4 class="px-3">Cuentos y letras</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Visión</li>
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Trabaja con nosotros</li>
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Términos de servicio</li>
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Donar</li>
+                </ul>
+            </section>
+            
+            <section class="col-12 col-sm-6 col-md-3 p-3">
+                <h4 class="px-3">Descubrir</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Inicio</li>
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Libros</li>
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Autores</li>
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Volver al inicio</li>
+                </ul>
+            </section>
+            
+            <section class="col-12 col-sm-6 col-md-3 p-3">
+                <h4 class="px-3">Ayuda</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Centro de ayuda</li>
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Contacta con nosotros</li>
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Sugerencias de edición</li>
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Añadir un libro</li>
+                </ul>
+            </section>
+
+            <section class="col-12 col-sm-6 col-md-3 p-3">
+                <h4 class="px-3">Cambiar idioma</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">English (en)</li>
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Español (es)</li>
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Français (fr)</li>
+                    <li class="list-group-item text-decoration-underline text-info bg-secondary">Português (pt)</li>
+                </ul>
+            </section>
+        </div>
+        <p class="text-center mt-4 pb-2 mb-0">&copy; Cuentos y letras, 2024-2025</p>
+    </div>
+</footer>
+</body>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="js/customjs.js"></script>
+</html>
