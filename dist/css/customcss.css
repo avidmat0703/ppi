@@ -37,6 +37,12 @@
     transition: 0.5s ease-in-out;
 }
 
+.imgsm {
+    max-width: 150px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
 /* Estilos para las flechas de navegación */
 .swiper-button-next, .swiper-button-prev {
     position: absolute;
@@ -77,5 +83,11 @@
     .swiper-container {
         margin: revert;
         max-width: none;
+    }
+}
+
+@media (min-width: 350px) {
+    .buscador {
+        max-width: 120px;
     }
 }
