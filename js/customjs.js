@@ -1,3 +1,4 @@
+/* JS para el Swiper */
 document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1, // Muestra 1 slide por defecto
@@ -25,10 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 slidesPerView: 4, // Muestra 4 slides
             },
             1200: {
-                slidesPerView: 5, // Muestra 4 slides
+                slidesPerView: 5, // Muestra 5 slides
             },
             1400: {
-                slidesPerView: 6, // Muestra 4 slides
+                slidesPerView: 6, // Muestra 6 slides
             },
         },
     });

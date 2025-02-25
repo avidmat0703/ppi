@@ -52,7 +52,7 @@
     height: 40px;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
     border-radius: 50%;
-    color: white; /* Color del ícono */
+    color: white; /* Color del icono */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +61,7 @@
 }
 
 .swiper-button-next::after, .swiper-button-prev::after {
-    font-size: 20px; /* Tamaño del ícono */
+    font-size: 20px; /* Tamaño del icono */
     font-weight: bold;
 }
 
