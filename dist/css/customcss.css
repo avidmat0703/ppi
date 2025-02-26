@@ -15,22 +15,22 @@
 
 .swiper-container {
     width: 100%;
-    overflow: hidden; /* Oculta el overflow lateral */
+    overflow: hidden;
 }
 
 .swiper-wrapper {
     display: flex;
-    flex-wrap: nowrap; /* Evita que las slides se envuelvan a la siguiente línea */
+    flex-wrap: nowrap;
 }
 
 .swiper-slide {
-    flex: 0 0 auto; /* Las slides no se estiran ni se encogen */
-    width: 100%; /* Ocupa el 100% del ancho del contenedor por defecto */
+    flex: 0 0 auto;
+    width: 100%;
 }
 
 /* Ajustes para las cards */
 .card {
-    width: 100%; /* Las cards ocupan el 100% del ancho del slide */
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -50,9 +50,9 @@
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
-    color: white; /* Color del icono */
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,16 +61,16 @@
 }
 
 .swiper-button-next::after, .swiper-button-prev::after {
-    font-size: 20px; /* Tamaño del icono */
+    font-size: 20px;
     font-weight: bold;
 }
 
 .swiper-button-next {
-    right: 10px; /* Posición de la flecha siguiente */
+    right: 10px;
 }
 
 .swiper-button-prev {
-    left: 10px; /* Posición de la flecha anterior */
+    left: 10px;
 }
 
 
